@@ -1,0 +1,10 @@
+
+[mygroup]
+192.168.1.10 java8
+192.168.1.11 java8
+192.168.1.12 java8
+192.168.1.13 java9
+192.168.1.14 java8
+
+note : the ansible  engg gives higtest value to host varible  
+then group varible
