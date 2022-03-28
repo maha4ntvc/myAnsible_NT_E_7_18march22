@@ -13,6 +13,7 @@
        name: tree
        stateee: present
     tags: mytree
+    ignore_errors: yes
 
   - name: installllll wget
     apt:
