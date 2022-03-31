@@ -7,10 +7,20 @@
     apt:
       name: apache2
       state: present
+    notify: restartwebserver
+
 
   - name: i want copy  file into  ansible nodes
     template:
-        src: myidenx.j2
-        dest: /var/www/html/index.html
+      src: myidenx.j2
+      dest: /var/www/html/index.html
+    notify: restartwebserver
+
+  handlers:
+  - name: restartwebserver
+    service:
+      name: apache2
+      state: restarted
+
 
   
