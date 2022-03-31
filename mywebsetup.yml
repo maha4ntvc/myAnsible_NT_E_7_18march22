@@ -1,0 +1,5 @@
+---
+- hosts: mywebservers
+  become: yes
+  roles:
+  - {role: mywebrole, when: anisble_os_family=="Debian"}
