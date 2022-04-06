@@ -32,6 +32,7 @@
      recurse: yes
      owner: tomcat
      state: directory
+     
 - name: Make the tomcat user the owner of the temp
   file:
      path: /opt/tomcat/temp/
