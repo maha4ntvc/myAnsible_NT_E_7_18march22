@@ -9,7 +9,7 @@
   user:
     name: tomcat
     shell: /bin/false
-    group: tomcat
     home:  /opt/tomcat
+    group: tomcat
     state: present 
     
